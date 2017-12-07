@@ -4,7 +4,9 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
-        "test": "mocha --compilers js:babel-core/register --recursive --require ./test/test_helper.js",
+        "start": "babel-node index.js",
+        "test":
+            "mocha --compilers js:babel-core/register --recursive --require ./test/test_helper.js",
         "test:watch": "npm run test -- --watch",
         "format": "prettier --write '{src,test}/**/*.js'"
     },
@@ -19,6 +21,7 @@
     },
     "dependencies": {
         "immutable": "^3.8.2",
-        "redux": "^3.7.2"
+        "redux": "^3.7.2",
+        "socket.io": "^2.0.4"
     }
 }
